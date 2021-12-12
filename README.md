@@ -22,7 +22,7 @@ KsMf Web Skeleton. This application prototype offers a general structure that al
 - .env
 ```
 
-- **client:** This directory contains a classic application based on technologies such as Angular, react, VueJs, etc.
+- **client:** This directory contains a classic application based on technologies such as Angular, react, VueJs, etc. For more information see [client description](https://github.com/ameksike/ksmf-skeleton-web/tree/main/client).
 - **server:** This directory contains the source code that runs on the server side, it is usually associated with the web API (database access, remote endpoint access, business logic, etc.)
 - **LICENSE:** product license description file
 - **package.json:** 
