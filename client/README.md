@@ -12,7 +12,7 @@ With Angular, you're taking advantage of a platform that can scale from single-d
 
 See the [live example](https://angular.io/generated/live-examples/what-is-angular/stackblitz.html) / [download example](https://angular.io/generated/zips/what-is-angular/what-is-angular.zip) for a working example containing the code snippets in this guide.
 
-## Develop Steps
+### Angular Develop Steps
 - npm install -g @angular/cli
 - ng new client
 - cd client/
@@ -30,5 +30,47 @@ For mor information see [Angular docs](https://angular.io/start).
 ## React
 React is a JavaScript library for building user interfaces. Learn what React is all about on our homepage or [in the tutorial](https://en.reactjs.org/tutorial/tutorial.html).
 
-React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
+React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started. 
 
+### React Develop Steps
+- npm install -g create-react-app
+- npm init react-app client
+- cd client
+- npm start
+- npm run build
+
+It will create a directory called *client* inside the current folder. Inside that directory, it will generate the initial project structure and install the transitive dependencies:
+
+```
+client
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    └── serviceWorker.js
+    └── setupTests.js
+```
+
+Your environment will have everything you need to build a modern single-page React app:
+
+- React, JSX, ES6, TypeScript and Flow syntax support.
+- Language extras beyond ES6 like the object spread operator.
+- Autoprefixed CSS, so you don’t need -webkit- or other prefixes.
+- A fast interactive unit test runner with built-in support for coverage reporting.
+- A live development server that warns about common mistakes.
+- A build script to bundle JS, CSS, and images for production, with hashes and sourcemaps.
+- An offline-first service worker and a web app manifest, meeting all the Progressive Web App criteria. (Note: Using the service worker is opt-in as of react-scripts@2.0.0 and higher)
+- Hassle-free updates for the above tools with a single dependency.
+
+For mor information see [create-react-app](https://github.com/facebook/create-react-app).
