@@ -22,9 +22,55 @@ See the [live example](https://angular.io/generated/live-examples/what-is-angula
 - ng generate component social
 - ng generate component toolbar
 - ng generate component footer
-- ng generate component connect
 - ng generate service backend
 
+It will create a directory called *client* inside the current folder. Inside that directory, it will generate the initial project structure and install the transitive dependencies:
+
+```
+client/
+├── README.md
+├── package.json
+├── .gitignore
+├── .angular
+├── .vscode
+├── .browserslistrc
+├── .editorconfig
+├── .gitignore
+├── angular.json
+├── karma.conf.js
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.spec.json
+├── node_modules/
+├── dist/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── app
+    │   ├── cli/
+    │   ├── doc/
+    │   ├── footer/
+    │   ├── toolbar/
+    │   ├── app.component.html
+    │   ├── app.component.scss
+    │   ├── app.component.spec.ts
+    │   ├── app.component.ts
+    │   ├── app.module.ts
+    │   ├── app-routing.module.ts
+    │   ├── backend.service.ts
+    │   └── backend.service.spec.ts
+    ├── assets/
+    ├── environments/
+    ├── favicon.ico
+    ├── index.html
+    ├── main.ts
+    ├── polyfills.ts
+    ├── styles.scss
+    └── test.ts
+```
 For mor information see [Angular docs](https://angular.io/start).
 
 ## React
@@ -42,16 +88,16 @@ React has been designed from the start for gradual adoption, and you can use as 
 It will create a directory called *client* inside the current folder. Inside that directory, it will generate the initial project structure and install the transitive dependencies:
 
 ```
-client
+client/
 ├── README.md
 ├── node_modules
 ├── package.json
 ├── .gitignore
-├── public
+├── public/
 │   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
-└── src
+└── src/
     ├── App.css
     ├── App.js
     ├── App.test.js
