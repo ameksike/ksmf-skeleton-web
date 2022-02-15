@@ -8,13 +8,23 @@
  * */
 const KsMf = require('ksmf');
 const path = require('path');
+const fs = require('fs');
 class AppModule extends KsMf.app.Module {
     async initApp() {
         const app = this.helper.get('app').web;
         //... add support for ForestAdmin, Angular and React Js Router options 
         app.get(/\/((?!(api|forest)).)*/, (req, res) => {
             const index = path.join(__dirname, '../../' + this.opt.srv.public, 'index.html');
-            res.sendFile(index);
+            try {
+                if (fs.existsSync(path)) {
+                    res.sendFile(index);
+                }else{
+                    res.end('API v1.0.0');
+                }
+            } catch (err) {
+                console.error(err)
+                res.end('API v1.0.0');
+            }
         });
     }
 }
