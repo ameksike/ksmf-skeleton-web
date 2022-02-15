@@ -12,6 +12,9 @@ const qs = require('qs');
 
 class DefaultController extends KsMf.app.Controller {
 
+    init() {
+        this.logger = this.helper.get('logger');
+    }
     /**
      * @description get user profile data
      *              see https://jsonplaceholder.typicode.com/
@@ -30,13 +33,11 @@ class DefaultController extends KsMf.app.Controller {
                 },
                 url: url + "/users"
             });
-    
+
             res.json(response.data);
 
         } catch (error) {
-            
             this.logger.error('list', error);
-
             res.status(404).json({
                 message: error.message,
                 name: error.name

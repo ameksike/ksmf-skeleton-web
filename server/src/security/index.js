@@ -21,13 +21,13 @@ class SecurityModule extends KsMf.app.Module {
             route: prefix + "/oauth/connected",
             controller: 'DefaultController',
             action: 'oauthConnect',
-            method: 'get'
+            method: 'post'
         }, {
             // oauth client credential
-            route: prefix + "/oauth/apikey",
+            route: prefix + "/oauth/option",
             controller: 'DefaultController',
-            action: 'oauthApikey',
-            method: 'post'
+            action: 'oauthOption',
+            method: 'get'
         }];
     }
 

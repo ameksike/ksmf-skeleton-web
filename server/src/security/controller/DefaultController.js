@@ -29,9 +29,9 @@ class DefaultController extends KsMf.app.Controller {
      * @param {OBJECT} req 
      * @param {OBJECT} res 
      */
-    async oauthApikey(req, res) {
+    async oauthOption(req, res) {
         res.json({
-            action: 'oauthApikey',
+            action: 'oauthOption',
             options: this.opt
         });
     }
