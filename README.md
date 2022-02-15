@@ -47,3 +47,4 @@ Below you can see the general structure of a full stack project:
 
 ## Docker Compose
 - docker-compose up -d
+- http://localhost:3333/api/v1/security/oauth/option
