@@ -21,5 +21,8 @@ RUN npm run build
 # define external port
 EXPOSE 3005
 
-# start app
-CMD ["npm", "start"]
+# start app in dev mode
+CMD ["npm", "run", "dev"]
+
+# start app in prod mode
+# CMD ["npm", "start"]

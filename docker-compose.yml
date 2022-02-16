@@ -1,12 +1,16 @@
 version: '3.7'
 
 services:
-  app:
-    container_name: webapp
+  appweb:
+    container_name: appweb
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 3333:3005
+      - 5003:3005
     environment:
       - APPNAME=6c7748bd0ad3fbdff996e81581ad64d6
+    volumes: 
+      - './client/:/app/client/'
+      - './server/:/app/server/'
