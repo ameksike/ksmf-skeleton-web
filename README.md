@@ -34,17 +34,23 @@ Below you can see the general structure of a full stack project:
 - **.gitignore:** The . gitignore file tells Git which files to ignore when committing your project to the GitHub repository. gitignore is located in the root directory of your repo. The .gitignore file itself is a plain text document.
 - **.env:** A . env file is a text file containing key value pairs of all the environment variables required by your application. This file is included with your project locally but not saved to source control so that you aren't putting potentially sensitive information at risk.
 
-## Docker build image 
+## Docker: Building your own Image 
 - docker build -t ksmf-skeleton-web .
 - docker images 
 
-## Docker run  
-- docker run --name myapp --env APPNAME=myapp_v1.0.1 -it -dp 3033:3005 ksmf-skeleton-web 
+## Docker: Run image  
+- docker run --name myapp --env APPNAME=myapp_v1.0.1 -it -dp 3333:3005 ksmf-skeleton-web 
 - docker ps -a
-- http://localhost:3033
-- http://localhost:3033/api/v1/profile
+- http://localhost:3333
+- http://localhost:3333/api/v1/profile
+- docker exec -it myapp bash 
 - docker stop myapp
 
-## Docker Compose
+## Docker Compose: Building your own image 
+- docker-compose build
+- docker images
+
+## Docker Compose: Run your own image  
 - docker-compose up -d
-- http://localhost:3333/api/v1/security/oauth/option
+- http://localhost:5003/api/v1/security/oauth/option
+- docker-compose stop
